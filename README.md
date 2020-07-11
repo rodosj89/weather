@@ -29,7 +29,7 @@ npm run test
 
 ### Run Test with Coverage
 ```
-npm run test-coverage
+npm run coverage
 ```
 &nbsp;
 
