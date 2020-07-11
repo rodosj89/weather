@@ -22,7 +22,7 @@
     "eslint": "lb-eslint --report-unused-disable-directives .",
     "eslint:fix": "npm run eslint -- --fix",
     "pretest": "npm run clean && npm run build",
-    "test": "export APPKEY_WEATHER=f861a709de5fb332231d7243e1f3a06d && npm run lint:fix && ./node_modules/mocha/bin/mocha \"dist/__tests__\"",
+    "test": "npm run lint:fix && ./node_modules/mocha/bin/mocha \"dist/__tests__\" && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec \"dist/__tests__\"",
     "coverage": "npm run lint:fix && nyc --reporter=lcovonly lb-mocha --allow-console-logs \"dist/__tests__\"",
     "posttest": "npm run lint",
