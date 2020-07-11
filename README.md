@@ -36,6 +36,13 @@ npm run coverage
 ```
 &nbsp;
 
+
+### Run Docker
+```
+npm run docker:build && npm run docker:run
+```
+&nbsp;
+
 ### Dependencias:
 - Libreria [IPLocate for Node.js](https://www.npmjs.com/package/node-iplocate)
 - Servicio de [OpenWeather](https://openweathermap.org/)
