@@ -1,9 +1,8 @@
 # Weather Api Rest
 [![Build Status](https://travis-ci.com/rodosj89/weather.svg?branch=master)](https://travis-ci.com/rodosj89/weather)
-[![Coverage Status](https://coveralls.io/repos/github/rodosj89/weather-coverage/badge.svg)](https://coveralls.io/r/github/rodosj89/weather-coverage)
+[![Coverage Status](https://coveralls.io/repos/github/rodosj89/weather/badge.svg?branch=master)](https://coveralls.io/github/rodosj89/weather?branch=master)
 
 
-https://travis-ci.com/rodosj89/weather.svg?branch=master&status=passed
 ### Descripcion
 Api Rest de pronostico del clima.
 

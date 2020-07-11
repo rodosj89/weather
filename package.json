@@ -24,7 +24,7 @@
     "pretest": "npm run clean && npm run build",
     "test": "npm run lint:fix && ./node_modules/mocha/bin/mocha \"dist/__tests__\"",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec \"dist/__tests__\"",
-    "coverage": "npm run lint:fix && nyc --reporter=lcovonly lb-mocha --allow-console-logs \"dist/__tests__\"",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "docker:build": "docker build -t weather .",

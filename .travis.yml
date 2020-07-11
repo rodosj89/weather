@@ -1,6 +1,6 @@
 language: node_js
 node_js:
  - "10.21.0"
-script: "npm test && npm run-script test-travis"
+script: "npm run-script coverage"
 # Send coverage data to Coveralls
 after_script: "COVERALLS_SERVICE_NAME=weather && COVERALLS_REPO_TOKEN=5rUKKXj29vWJuDY9AHQSyBVf8IJo8igqb && COVERALLS_GIT_BRANCH=master && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
